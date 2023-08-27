@@ -1,8 +1,7 @@
 # freecad auto backups
 **/*.FCStd1
 
-# don't include STL exports
-exports/
+ignore/
 
 # vim swapfiles
 **/*.swp
