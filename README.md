@@ -1,5 +1,23 @@
+mandrels
+
 FreeCAD files and resources that allow the creation of mandrels for rolling tapered staples and
 other tubes used in Uilleann Pipe reedmaking and pipemaking.
+
+TLDR (i.e., I don't need to customize my mandrel(s), but I want to get one printed or CNC machined; see pictures
+below for possible mandrels):
+
+1. If you just want to 3D print or CNC machine a staple rolling mandrel, download this project and upload one of
+   the files in the `exports/rolling` folder to a commerical 3D printing service that prints steel, and order a
+   "polished" finish. For CNC machining, use a high carbon steel, and submit the PDFs with diameter
+   tolerances if required by a commercial vendor.
+2. If you want to print the special flattening and shaping mandrel pictured and described below, do
+   the same as in step 1., but use one of the STL files in the `exports/shaping` folder. For CNC
+   machining, use a high carbon steel, and submit the PDFs with diameter tolerances if required by a
+   commercial vendor. Due to lack of demand, and the fact that each shaping mandrel need to be
+   customized to the particular staple in more detail than the rolling mandrels, there may or may not be many exports in this directory.
+
+Disclaimer: due to variations in material, I do not guarantee that any mandrel design included here, when printed and machined, will
+fit your staple or use case.
 
 [TOC]
 
@@ -42,21 +60,34 @@ shape from any thickness of sheet metal, as well as a custom-designed mandrel fo
 staples, with particular emphasis on complete symmetry and reproducibility.
 
 ## Motivation
-### 3D Printing of Rolling Mandrels
+### 3D Printing and CNC Machining of Rolling Mandrels
 Machining thin steel rod is very difficult, due to its flexibility, and grinding mandrels by hand is
-time-consuming and imprecise.  Combined with modern, commercial 3D printing of stainless steel,
+time-consuming and imprecise.  Combined with modern, commercial 3D printing and CNC machining of stainless steel,
 these CAD models provide relatively inexpensive access to a precision tool that is otherwise
 difficult to acquire or make.
 
+#### 3D Printing vs. CNC Machining
+3D printing prices per printed item typically do not scale with quantity ordered, so this is the
+best choice for low volume orders.  The accuracy and precision of the printed item is lower than CNC machining.
+
+CNC machining costs per item machined scale dramatically with quantity ordered.  At the time of
+writing, a quantity of about 5 mandrels led to the same price as 3D printing one mandrel, with the
+costs continuing to decrease linearly from there, such that at quantity 20 or above, they are very
+affordable. The accuracy and precision of CNC machining is very high compared to 3D printing.
+
 #### Mandrels for Reed Staples
 `rolling_mandrels/tapered_rolling_mandrel.FCStd` creates a mandrel of a specified length based on
-staple dimensions, and dimensions it such that the staple will be exactly centered on the mandrel
-during the rolling process, according to its internal dimensions.
+staple dimensions, and dimensions it *such that the staple will be exactly centered on the mandrel
+during the rolling process, according to its internal dimensions*. All the math required for this is
+incorporated into the spreadsheet in the project, so all you have to do is enter your values, and
+watch the model change.
 
 #### Arbitrary Mandrels and Sheet Metal Dimensioning
-Further, they may be used to model parameterized mandrels for rolling any size of
+Further, this same file may be used to model parameterized mandrels for rolling any size of
 tapered (or non-tapered) tube from any thickness of sheet metal.  These may be later machined from
-the technical drawings that this FreeCAD project provides, or printed from exported STL files.
+the technical drawings that this FreeCAD project provides, or printed from exported STL files (3D
+printing cost increases with mass, and there are smaller size limits for printing steel, at this
+point in time).
 
 ### Calculation of Sheet Metal Dimensions for Rolled Tubes of any Taper Angle and Size
 
@@ -67,18 +98,18 @@ roll sections of tubing for drones, chanter caps, etc.
 
 ### 3D Printing of Flattening Mandrels
 
-Very precise, parameterized, symmetric flattening mandrel(s) can be printed using the files in
+Parameterized, symmetric flattening mandrel(s) can be printed using the files in
 `flattening_shaping_mandrels/`. This eliminates the need to file or grind them by hand, which can be
 a barrier to entry for some.
 
 ## Modes of use
-The main intended use is to export STL files that can be used to 3D print mandrels
-in stainless steel, which is a service that is provided commercially by a number of companies.  The
+The primary use of this project is to export STL files that can be used to 3D print mandrels
+in stainless steel, or STEP files that can be used for CNC machining of mandrels; these are services that are provided commercially by a number of companies.  The
 CAD files and included technical drawings may also be useful for designing or dimensioning mandrels
-that are to be machined.
+that are to be machined in a traditional manner.
 
 ## FreeCAD
-To use this repository, you will need a basic understanding of FreeCAD; this can be
+If you want to customize your mandrel(s), you will need a basic understanding of FreeCAD; this can be
 obtained in a couple of hours. Included is a helpful HackSpace *FreeCAD for Makers* article,
 licensed separately under a Creative Commons Attribution-NonCommercial- ShareAlike 3.0 license
 (https://creativecommons.org/licenses/by-nc-sa/3.0/) No material in this project is a derivative
@@ -112,11 +143,15 @@ Do one of the following:
 
 #### Standard STL Export
 1. Select a Body in the object tree (the one you modelled) and click **File -> Export**
-2. Select STL as the file type,
+2. Select STL as the file type
 
 #### Mesh Workbench
 To fine tune the mesh of the object, use the Mesh Design workbench to create a mesh and export it to
-an STL file.
+an STL file. Files can become very large if you use very high precision facets.
+
+### Exporting for CNC Machining
+1. Select a Body in the object tree (the one you modelled) and click **File -> Export**
+2. Select STEP as the file type (or whatever format you require; there are many options)
 
 ## 3D Printing
 
@@ -126,9 +161,14 @@ if it does), upload it, pay, and receive your precision tool in the mail some ti
 to read the service's instructions for printing steel - they may recommend scaling up in size
 by a couple percent due to material contraction during the printing process.
 
+## CNC Machining
+Follow a similar procedure as in 3D printing above, but of course choose CNC as the technique,
+specify material (high carbon steel recommended), tolerance specifications, finishes, and upload any required technical drawings if
+you have chosen very low tolerances.
+
 # Known Issues
 
-- Changing the length of the mandrel can distort dimensions in the technical drawings. You will
+- Changing the length of the mandrel can displace dimensions in the technical drawings. You will
     potentially need to move or remove and replace dimensions.
 
 # License
