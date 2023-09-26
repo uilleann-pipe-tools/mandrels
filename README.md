@@ -1,15 +1,18 @@
 mandrels
 
+[TOC]
+
 FreeCAD files and resources that allow the creation of mandrels for rolling tapered staples and
 other tubes used in Uilleann Pipe reedmaking and pipemaking.
 
+# TLDR
 TLDR (i.e., I don't need to customize my mandrel(s), but I want to get one printed or CNC machined; see pictures
 below for possible mandrels):
 
 1. If you just want to 3D print or CNC machine a staple rolling mandrel, download this project and upload one of
    the files in the `exports/rolling` folder to a commerical 3D printing service that prints steel, and order a
    "polished" finish. For CNC machining, use a high carbon steel, and submit the PDFs with diameter
-   tolerances if required by a commercial vendor.
+   tolerances if required by a commercial vendor. NOTE: commercial companies may reject mandrels as infeasible since they are long and narrow, and have similar flexibility issues as encountered during normal machining; I have not had one accepted, but you may, especially if you use other processes like CNC grinding) 
 2. If you want to print the special flattening and shaping mandrel pictured and described below, do
    the same as in step 1., but use one of the STL files in the `exports/shaping` folder. For CNC
    machining, use a high carbon steel, and submit the PDFs with diameter tolerances if required by a
@@ -18,8 +21,6 @@ below for possible mandrels):
 
 Disclaimer: due to variations in material, I do not guarantee that any mandrel design included here, when printed and machined, will
 fit your staple or use case.
-
-[TOC]
 
 # Examples
 ## Tapered Rolling Mandrel in FreeCAD
