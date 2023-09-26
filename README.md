@@ -1,7 +1,5 @@
 mandrels
 
-[TOC]
-
 FreeCAD files and resources that allow the creation of mandrels for rolling tapered staples and
 other tubes used in Uilleann Pipe reedmaking and pipemaking.
 
