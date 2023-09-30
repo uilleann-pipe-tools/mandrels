@@ -83,14 +83,14 @@ affordable. The accuracy and precision of CNC machining is very high compared to
 staple dimensions, and dimensions it *such that the staple will be exactly centered on the mandrel
 during the rolling process, according to its internal dimensions*. All the math required for this is
 incorporated into the spreadsheet in the project, so all you have to do is enter your values, and
-watch the model change.
+watch the model change. It accounts for the total length of the mandrel as well.
 
 #### Arbitrary Mandrels and Sheet Metal Dimensioning
 Further, this same file may be used to model parameterized mandrels for rolling any size of
 tapered (or non-tapered) tube from any thickness of sheet metal.  These may be later machined from
 the technical drawings that this FreeCAD project provides, or printed from exported STL files (3D
 printing cost increases with mass, and there are smaller size limits for printing steel, at this
-point in time).
+point in time). These mandrels will also center the sheet blank in the middle of their length.
 
 ### Calculation of Sheet Metal Dimensions for Rolled Tubes of any Taper Angle and Size
 
@@ -174,6 +174,12 @@ you have chosen very low tolerances.
 - Changing the length of the mandrel can displace dimensions in the technical drawings. You will
     potentially need to move or remove and replace dimensions.
 
+# Credit and Inspriation
+Thank you to the following people:
+- Tim Britton for the idea of using round nose pliers in the first place when making staples
+- Makoto Nakatsui for a post of his where he showed the idea of forging a staple eye around a template with wire crimpers
+- Bill Haneman for staple designs, and all things reeds
+- Lukas Emanuel for the initial idea of 3D printing of mandrels in steel!
 # License
 Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)
 
