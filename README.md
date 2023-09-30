@@ -36,6 +36,10 @@ fit your staple or use case.
 ### The Flattening and Rolling Mandrels 3D Printed
 <img src="assets/photos/2x_mandrels.jpg" alt="Rolling and Shaping Mandrels" width="600"/>
 
+### Staples Rolled on the Rolling Mandrel
+<img src="assets/photos/rolled_staple_bore.jpg" alt="Rolled Staple: sight down bore showing concentricity" width="600"/>
+<img src="assets/photos/rolled_staple_oblique_view.jpg" alt="Rolled Staple: view from above and side showing straightness" width="600"/>
+
 ### The flattening Mandrel in Use
 Round-nosed pliers can be used to squeeze and roll around the
 circumference of the eye and swage and forge it around the tight-fitting shaping end of the mandrel.
