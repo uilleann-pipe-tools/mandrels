@@ -7,7 +7,7 @@ other tubes used in Uilleann Pipe reedmaking and pipemaking.
 TLDR (i.e., I don't need to customize my mandrel(s), but I want to get one printed or CNC machined; see pictures
 below for possible mandrels):
 
-1. If you just want to 3D print or CNC machine a staple rolling mandrel, download this project and upload one of
+1. If you just want to 3D print or CNC machine a staple rolling mandrel, clone or <a href=https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives alt="Github instructions to download a project as a ZIP archive" target="_blank">download this project as a ZIP archive</a>, and upload one of
    the files in the `exports/rolling` folder to a commerical 3D printing service that prints steel, and order a
    "polished" finish. For CNC machining, use a high carbon steel, and submit the PDFs with diameter
    tolerances if required by a commercial vendor. NOTE: commercial companies may reject mandrels as infeasible since they are long and narrow, and have similar flexibility issues as encountered during normal machining; I have not had one accepted, but you may, especially if you use other processes like CNC grinding) 
