@@ -170,16 +170,18 @@ specify material (high carbon steel recommended), tolerance specifications, fini
 you have chosen very low tolerances.
 
 # Known Issues
-
 - Changing the length of the mandrel can displace dimensions in the technical drawings. You will
     potentially need to move or remove and replace dimensions.
 
-# Credit and Inspriation
+# Credit and Inspiration
 Thank you to the following people:
-- Tim Britton for the idea of using round nose pliers in the first place when making staples
-- Makoto Nakatsui for a post of his where he showed the idea of forging a staple eye around a template with wire crimpers
-- Bill Haneman for staple designs, and all things reeds
-- Lukas Emanuel for the initial idea of 3D printing of mandrels in steel!
+- Tim Britton for the idea of using round nose pliers in the first place when making staples, which
+    he details in his book <u>My Method</u>
+- Makoto Nakatsui for a post of his where he showed the technique of forging a staple eye around a mold with the crimping jaws of wire strippers
+- Bill Haneman for staple designs, the idea of CNC bulk cost estimates, and all things reeds
+- Lukas Emanuel for the initial idea of 3D printing mandrels in steel
+- Alex McCullen for motivating the drive for a more perfect staple
+
 # License
 Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)
 
